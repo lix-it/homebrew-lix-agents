@@ -5,21 +5,21 @@
 class LixAgents < Formula
   desc "CLI tool for obtaining temporary Lix API tokens with email-based approval"
   homepage "https://github.com/lix-it/lix-agents"
-  version "0.1.0"
+  version "0.2.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lix-it/lix-agents/releases/download/v0.1.0/lix-agents_0.1.0_darwin_amd64.tar.gz"
-      sha256 "b2bd2925bd9edc90f8b10714fe40224e814cfa3a30286a51bcb0c018365a599d"
+      url "https://github.com/lix-it/lix-agents/releases/download/v0.2.0/lix-agents_0.2.0_darwin_amd64.tar.gz"
+      sha256 "ee4d4ebaa823aa5cd52c7cb07ffe6cc71785ea2e7373bd562a084339d79a0105"
 
       define_method(:install) do
         bin.install "lix-agents"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lix-it/lix-agents/releases/download/v0.1.0/lix-agents_0.1.0_darwin_arm64.tar.gz"
-      sha256 "d35d16619e342243c36e09ddb30c093933c386e1335c2f69688a0870239dd75d"
+      url "https://github.com/lix-it/lix-agents/releases/download/v0.2.0/lix-agents_0.2.0_darwin_arm64.tar.gz"
+      sha256 "cfd37d14a1e40b27254fecc78d6ffdc81256141b72e51fbd7260f34356725be2"
 
       define_method(:install) do
         bin.install "lix-agents"
@@ -29,15 +29,15 @@ class LixAgents < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lix-it/lix-agents/releases/download/v0.1.0/lix-agents_0.1.0_linux_amd64.tar.gz"
-      sha256 "c55eeb3c4571e2d026828f8496088b70e53b21959d1c78b5e55e7054fbeb2fa8"
+      url "https://github.com/lix-it/lix-agents/releases/download/v0.2.0/lix-agents_0.2.0_linux_amd64.tar.gz"
+      sha256 "606468ed682bc28d57838e4ef8784d690817abf1c0ea855fa47b1c3fda14132d"
       define_method(:install) do
         bin.install "lix-agents"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lix-it/lix-agents/releases/download/v0.1.0/lix-agents_0.1.0_linux_arm64.tar.gz"
-      sha256 "16588a4b6e22e86e3118c658331d696aa5c2dfd1415c445d74ccdd48d2b61ef8"
+      url "https://github.com/lix-it/lix-agents/releases/download/v0.2.0/lix-agents_0.2.0_linux_arm64.tar.gz"
+      sha256 "11d3b6900ad1545ed7150920139e64e9d98ac77eace171e291b835d1d0e5b57f"
       define_method(:install) do
         bin.install "lix-agents"
       end
